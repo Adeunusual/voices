@@ -1,15 +1,17 @@
 const Button = ({ text, icon, link, styleClass, children, onclick, id }) => {
     const content = (items) => {
         if (items) return items;
+
         if (link) {
             return <a href={link}>
                 {text}
             </a>
-        } else return
-        <span>
+        } else return <span>
             {text}
         </span>
     }
+
+
     return (
         <button
             id={id}
@@ -20,6 +22,7 @@ const Button = ({ text, icon, link, styleClass, children, onclick, id }) => {
         </button>
     )
 }
+
 Button.defaultProps = {
     text: '',
     icon: '',
