@@ -1,0 +1,473 @@
+/************************ candidates */
+.card-wrapper {
+    max-width: 1300px;
+    padding: 24px 0;
+    margin: 0 auto;
+    border: 2px solid red;
+    font-family: var(--GT-Walsheim);
+}
+
+.card-inner-w {
+    padding: 0 15px;
+    border: 2px solid orange;
+}
+
+.card-wrapper .heading h2 {
+    color: var(--color-gray-10);
+    font-size: 28px;
+    font-weight: var(--font-weight-normalBold);
+    line-height: 1;
+    letter-spacing: -0.75;
+}
+
+.cardComponent {
+    display: grid;
+    grid-gap: 8px 0;
+    margin-top: 24px;
+}
+
+.card-border {
+    padding: 16px;
+    border-radius: var(--border-radius-small);
+    border: 1px solid var(--btn-shadow-color);
+    background-color: transparent;
+    margin: 0 auto;
+}
+
+.candidateDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.candidateDetails div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-gray-10);
+}
+
+.candidate-imgWrapper {
+    position: relative;
+    margin-inline-end: 8px;
+}
+
+
+.candidate-imgWrapper .icon {
+    font-size: 10px;
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    color: var(--color-info) !important;
+}
+
+.candidateDetails img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.candidateDetails .candidate-name {
+    font-size: 0.875rem;
+}
+
+.candidateDetails .icon-w {
+    width: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.candidateDetails .icon {
+    font-size: 11px;
+    color: var(--color-gray-10);
+}
+
+.card-border .card {
+    height: 250px;
+    max-height: 100%;
+    width: 250px;
+    max-width: 100%;
+
+    padding: 16px;
+    margin: 16px 0 0;
+
+    border-radius: var(--border-radius-medium);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer !important;
+}
+
+.card .partyLogo {
+    width: 25px;
+}
+
+.card .partyLogo img {
+    width: 100%;
+}
+
+.cardImg {
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+}
+
+.cardImg img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: var(--white);
+    position: relative;
+    border: 1px solid #fff;
+    font-family: var(--NeueMachina) !important;
+}
+
+.card-details p.cardTxt {
+    /* font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center; */
+}
+
+.smallTxt {
+    font-size: 0.675rem;
+    text-align: center;
+    font-weight: var(--font-weight-light);
+}
+
+/* Tinubu */
+.tinubuCard .card {
+    background-image: url(../../../../assets/images/BKG.png);
+}
+
+.tinubuCard .posImgTxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tinubuCard .card-details p.cardTxt {
+    /* letter-spacing: -.97px; */
+}
+
+.tinubuCard .cardTxt {
+    position: absolute;
+    top: 5rem;
+    left: auto;
+    font-size: 1.5rem;
+    letter-spacing: -0.875px;
+    font-weight: var(--font-weight-bold);
+}
+
+.tinubuCard .cardImg {
+    margin-bottom: 22px;
+}
+
+.tinubuCard .BtmCardTxt {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+}
+
+.tinubuCard .cardImg .tinubuCard .cardImg img {
+    width: 80px;
+    height: 80px;
+}
+
+.smallTxt {
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.tinubuCard .BtmCardTxt {
+    /* font-size: 6em !important; */
+}
+
+
+/* Peterobi */
+.peterObiCard .card {
+    background-image: url(../../../../assets/images/PetObg.png);
+}
+
+.peterObiCard .cardImg {
+    width: 80px;
+    height: 80px;
+}
+
+.peterObiCard .posImgTxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.peterObiCard .card-details p.cardTxt {
+    font-size: 2.3rem;
+    font-weight: 700;
+    letter-spacing: -1.97px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.peterObiCard .BtmCardTxt {
+    font-size: 5em !important;
+    font-weight: var(--font-weight-bold);
+}
+
+.peterObiCard .smallTxt {
+    margin-top: -20px;
+}
+
+/* atiku card */
+.atikuCard .card {
+    background-image: url(../../../../assets/images/BKG3.png);
+}
+
+.atikuCard .cardImg {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 80px;
+    left: 57px;
+}
+
+.atikuCard .posImgTxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: -20px; */
+}
+
+.atikuCard .card-details p.cardTxt {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -1.97px;
+    text-align: center;
+    /* padding-top: 12px; */
+}
+
+.atikuCard .midTxt {
+    font-size: 3.2em !important;
+    font-weight: var(--font-weight-bold);
+    position: absolute;
+    top: 22px;
+}
+
+.atikuCard .BtmCardTxt,
+.atikuCard .BtmCardTxtNxt {
+    font-size: 3rem !important;
+    font-weight: var(--font-weight-bold);
+    /* position: absolute;
+    top: 100px; */
+}
+
+.atikuCard .atk {
+    width: 185px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: 63px;
+}
+
+.atikuCard .smallTxt {
+    position: absolute;
+    top: 150px;
+}
+
+.atikuCard .card-details p.cardTxt {
+    /* font-size: 2rem; */
+}
+
+/* voice Nig */
+.voiceNig .card {
+    background-image: url(../../../../assets/images/Bg4.png);
+}
+
+.create-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.create-btn {
+    width: 100%;
+    max-width: 100%;
+    height: 50px;
+    color: #FFF;
+    border: 0;
+    border-radius: 9px;
+}
+
+.create-txt {
+    width: 100%;
+    color: #CDCDCD;
+    /* font-size: .75rem; */
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: normal;
+    margin-block-start: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-txt .icon {
+    /* font-size: .9rem; */
+    color: #4CAF50;
+    margin-inline-end: 5px;
+}
+
+/* @media */
+@media only screen and (min-width:440px) {
+    .cardComponent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 8px 8px;
+    }
+
+    .card-border .card {
+        height: auto;
+        max-height: 100%;
+        width: auto;
+        max-width: 100%;
+    }
+
+    .card-border {
+        margin: 0;
+    }
+
+    /* PeterObi */
+    .peterObiCard .cardImg {
+        width: 80px;
+        height: 80px;
+    }
+
+    .peterObiCard .posImgTxt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -12px;
+    }
+
+    .peterObiCard .card-details p.cardTxt {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: -1.97px;
+        text-align: center;
+        padding-top: 12px;
+    }
+
+    .peterObiCard .BtmCardTxt {
+        font-size: 4.5em !important;
+        font-weight: var(--font-weight-bold);
+    }
+
+    .peterObiCard .smallTxt {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width:640px) {
+    .card-inner-w {
+        padding: 0 30px;
+    }
+
+    .cardComponent {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cardImg {
+        width: 80px;
+        height: 80px;
+        border: 2px solid var(--white);
+        border-radius: 50%;
+    }
+
+    .cardImg img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* Tinubu card */
+
+    .tinubuCard .cardTxt {
+        position: absolute;
+        top: 5rem;
+        left: auto;
+        font-size: 1.5rem;
+        letter-spacing: -0.875px;
+        font-weight: var(--font-weight-bold);
+    }
+
+    .tinubuCard .cardImg {
+        margin-bottom: 20px;
+    }
+
+    .peterObiCard .cardImg {
+        width: 80px;
+        height: 80px;
+    }
+
+    .peterObiCard .posImgTxt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -5px;
+    }
+
+    .peterObiCard .card-details p.cardTxt {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: -1.97px;
+        text-align: center;
+        padding-top: 12px;
+    }
+
+    .peterObiCard .BtmCardTxt {
+        font-size: 4em !important;
+        font-weight: var(--font-weight-bold);
+    }
+
+    .peterObiCard .smallTxt {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (min-width:960px) {
+    .card-wrapper {
+        padding: 48px 0 80px 0;
+    }
+
+    .card-inner-w {
+        padding: 0 40px;
+    }
+
+    .card-wrapper .heading h2 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .cardComponent {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width:960px) {
+
+    .cardComponent {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 25px 25px;
+    }
+}

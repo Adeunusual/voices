@@ -80,6 +80,7 @@
 /* root */
 :root {
   --GT-Walsheim: GTWalsheim;
+  --NeueMachina: NeueMachina;
   --font-weight-light: 100;
   --font-weight-regular: 200;
   --font-weight-normal: 300;
@@ -123,6 +124,7 @@
   --color-gray-92: #252525;
   --color-gray-95: #1F1F1F;
   --color-gray-100: #131313;
+  --color-info: #03a5d6;
   --transition-02: .2s ease;
   --btn-shadow-color: rgba(255, 255, 255, 0.15);
   --border-color: rgba(131, 131, 131, 0.25);
