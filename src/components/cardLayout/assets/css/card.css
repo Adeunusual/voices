@@ -28,7 +28,6 @@
     padding: 16px;
     border-radius: var(--border-radius-small);
     border: 1px solid var(--btn-shadow-color);
-    background-color: yellow;
     margin: 0 auto;
 }
 
