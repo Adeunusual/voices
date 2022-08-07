@@ -242,7 +242,7 @@
     font-size: 3.2em !important;
     font-weight: var(--font-weight-bold);
     position: absolute;
-    top: 22px;
+    top: 25px;
 }
 
 .atikuCard .BtmCardTxt,
@@ -258,7 +258,7 @@
     align-items: center;
     padding: 10px;
     position: absolute;
-    top: 70px;
+    top: 65px;
 }
 
 .atikuCard .smallTxt {
