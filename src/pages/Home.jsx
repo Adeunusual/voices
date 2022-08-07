@@ -5,6 +5,7 @@ import { FaImage, FaEdit, FaDownload } from 'react-icons/fa';
 import Banner from "../components/Banner";
 import IconBox from "../components/IconBox";
 import CardLayout from "../components/cardLayout";
+import Footer from "../components/Footer";
 // import CardLayout from "../components/cardLayout";
 // import Footer from "../components/Footer";
 const Home = () => {
@@ -24,7 +25,8 @@ const Home = () => {
                         <IconBox type='download' icon={<FaDownload />} />
                     </div>
                 </div>
-                <CardLayout />
+                <CardLayout hide={showMobileNav} />
+                <Footer hide={showMobileNav} />
             </div>
         </>
     )

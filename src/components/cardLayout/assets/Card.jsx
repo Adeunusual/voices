@@ -4,8 +4,8 @@ import { FaCheckCircle, FaEllipsisH } from 'react-icons/fa';
 import data from './CardData.jsx';
 import html2canvas from "html2canvas";
 import avatar from '../../../assets/images/avatar.png';
-// import Popup from './Popup.jsx';
-// import UsePopUp from './UsePopUp';
+import PopUpModal from './PopUpModal';
+import RenderPopUp from './RenderPopUp';
 
 const Card = () => {
     // state
@@ -17,10 +17,10 @@ const Card = () => {
         setCheckCardId(id);
     }
 
-    //button popUp
-    // const [popUpBtn, setPopUpBtn] = useState(false);
+    //Handle PopUp Modal 
+    const [popUpBtn, setPopUpBtn] = useState(false);
     // Handling DetailspopUp trigger
-    // const [usePopUpBtn, setusePopUpBtn] = useState(false);
+    const [usePopUpBtn, setusePopUpBtn] = useState(false);
 
     //handle ImageChange
     //Handle setImg
@@ -29,6 +29,7 @@ const Card = () => {
     const handleCardImgChange = (event) => {
         setCardImg(URL.createObjectURL(event.target.files[0]));
     }
+
     //function shareCard
     function shareCard(canvas) {
         canvas.toBlob((blob) => {
@@ -56,6 +57,7 @@ const Card = () => {
 
     //Handle card Download & share
     const printRef = useRef();
+
     const handleCard = async (option) => {
         // ---
         const digitalCard = printRef.current;
@@ -65,7 +67,7 @@ const Card = () => {
         switch (option) {
             case 'share': return shareCard(canvas);
             case 'render':
-                // setusePopUpBtn(true)
+                setusePopUpBtn(true)
                 setRenderCardImg(data);
                 break;
             default: return downloadCard(data)
@@ -93,7 +95,7 @@ const Card = () => {
                     </div>
 
                     <div className="card"
-                        // onClick={() => setPopUpBtn(true)}
+                        onClick={() => setPopUpBtn(true)}
                         ref={id === checkCardId ? printRef : null}>
                         <div className="partyLogo">
                             <img className='partyLogo-img' src={dataGotten.partyLogo} alt="" />
@@ -116,6 +118,18 @@ const Card = () => {
                 </div>
             ))
             }
+
+            {/* PopUp Modal */}
+            <PopUpModal trigger={popUpBtn} setTrigger={setPopUpBtn} handleCardImgChange={handleCardImgChange}>
+                <div className="create-card">
+                    <button className='custom-btn create-btn' onClick={() => handleCard('render')} >
+                        Create Now for ₦500
+                    </button>
+                    <span className='create-txt'><FaCheckCircle className='icon' />Saved just now</span>
+                </div>
+            </PopUpModal>
+            <RenderPopUp trigger={usePopUpBtn} setTrigger={setusePopUpBtn} handleCard={handleCard} cardSrc={renderCardImg}>
+            </RenderPopUp>
         </div >
     )
 }

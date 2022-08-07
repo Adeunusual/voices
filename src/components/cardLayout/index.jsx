@@ -1,9 +1,9 @@
 import Card from './assets/Card';
 // import CardCarousel from './assets/CardCarousel';
 
-const CardLayout = () => {
+const CardLayout = ({ hide }) => {
     return (
-        <div className='card-wrapper'>
+        <div className={`card-wrapper ${hide ? 'd-none' : ''}`}>
             <div className="card-inner-w">
                 <div className="heading">
                     <h2>Select a Card 🔥</h2>

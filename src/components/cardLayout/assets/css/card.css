@@ -3,13 +3,11 @@
     max-width: 1300px;
     padding: 24px 0;
     margin: 0 auto;
-    border: 2px solid red;
     font-family: var(--GT-Walsheim);
 }
 
 .card-inner-w {
     padding: 0 15px;
-    border: 2px solid orange;
 }
 
 .card-wrapper .heading h2 {
@@ -30,7 +28,7 @@
     padding: 16px;
     border-radius: var(--border-radius-small);
     border: 1px solid var(--btn-shadow-color);
-    background-color: transparent;
+    background-color: yellow;
     margin: 0 auto;
 }
 
@@ -110,13 +108,15 @@
 .cardImg {
     width: 80px;
     height: 80px;
-    border: 2px solid var(--white);
+    border: 1px solid var(--white);
     border-radius: 50%;
 }
 
 .cardImg img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 .card-details {
@@ -127,7 +127,6 @@
 
     color: var(--white);
     position: relative;
-    border: 1px solid #fff;
     font-family: var(--NeueMachina) !important;
 }
 
@@ -149,10 +148,6 @@
     flex-direction: column;
 }
 
-.tinubuCard .card-details p.cardTxt {
-    /* letter-spacing: -.97px; */
-}
-
 .tinubuCard .cardTxt {
     position: absolute;
     top: 5rem;
@@ -171,7 +166,7 @@
     font-weight: var(--font-weight-bold);
 }
 
-.tinubuCard .cardImg .tinubuCard .cardImg img {
+.tinubuCard .cardImg .tinubuCard .cardImg {
     width: 80px;
     height: 80px;
 }
@@ -437,18 +432,6 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .cardImg {
-        width: 80px;
-        height: 80px;
-        border: 2px solid var(--white);
-        border-radius: 50%;
-    }
-
-    .cardImg img {
-        width: 100%;
-        object-fit: cover;
-    }
-
     /* Tinubu card */
 
     .tinubuCard .cardTxt {
@@ -519,4 +502,41 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 25px 25px;
     }
+}
+
+/* rn */
+.custom-btn {
+    background-color: var(--color-primary);
+    background-image: linear-gradient(var(--gradient-angle), var(--gradient-first), var(--gradient-second), var(--gradient-third));
+    font-family: var(--GT-Walsheim);
+}
+
+.create-txt {
+    width: 100%;
+    color: #CDCDCD;
+    font-size: .75rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: normal;
+    margin-block-start: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-txt .icon {
+    font-size: .9rem;
+    color: #4CAF50;
+    margin-inline-end: 5px;
+}
+
+@media only screen and (min-width:960px) {
+    .create-card {
+        flex-direction: row;
+    }
+
+    .create-txt {
+        margin-block-start: 0;
+    }
+
 }
