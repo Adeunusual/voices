@@ -51,7 +51,9 @@ const data = [
         candidateImg: voteNig,
         candidateName: 'VoteNigeria',
         cardImg: avatar,
-        cardTxt: "I'm Proud BAT2023",
+        cardTxt: "Naija",
+        midTxt: "lets's",
+        bottomCardTxt: 'vote',
         smallTxt: 'create yours at voice.assured.com'
     }, {
         cardId: 4,
@@ -93,7 +95,10 @@ const data = [
         candidateName: 'Atiku',
         partyLogo: PDPlogo,
         cardImg: avatar,
-        cardTxt: "I'm Proud Atiku 2023",
+        cardTxt: "I'm Proud",
+        midTxt: ' Atiku',
+        bottomCardTxt: '2',
+        bottomCardTxtNxt: '23',
         smallTxt: 'create yours at voice.assured.com'
     },
     {
@@ -123,7 +128,10 @@ const data = [
         candidateName: 'Atiku',
         partyLogo: PDPlogo,
         cardImg: avatar,
-        cardTxt: "I'm Proud Atiku 2023",
+        cardTxt: "I'm Proud",
+        midTxt: ' Atiku',
+        bottomCardTxt: '2',
+        bottomCardTxtNxt: '23',
         smallTxt: 'create yours at voice.assured.com'
     },
     {

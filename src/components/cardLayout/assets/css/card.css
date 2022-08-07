@@ -131,12 +131,6 @@
     font-family: var(--NeueMachina) !important;
 }
 
-.card-details p.cardTxt {
-    /* font-size: 1.8rem;
-    font-weight: 700;
-    text-align: center; */
-}
-
 .smallTxt {
     font-size: 0.675rem;
     text-align: center;
@@ -186,12 +180,6 @@
     text-align: center;
     padding-top: 20px;
 }
-
-
-.tinubuCard .BtmCardTxt {
-    /* font-size: 6em !important; */
-}
-
 
 /* Peterobi */
 .peterObiCard .card {
@@ -245,7 +233,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* margin-top: -20px; */
+    margin-top: -20px;
 }
 
 .atikuCard .card-details p.cardTxt {
@@ -267,8 +255,6 @@
 .atikuCard .BtmCardTxtNxt {
     font-size: 3rem !important;
     font-weight: var(--font-weight-bold);
-    /* position: absolute;
-    top: 100px; */
 }
 
 .atikuCard .atk {
@@ -286,14 +272,26 @@
     top: 150px;
 }
 
-.atikuCard .card-details p.cardTxt {
-    /* font-size: 2rem; */
-}
-
 /* voice Nig */
 .voiceNig .card {
     background-image: url(../../../../assets/images/Bg4.png);
 }
+
+/* .voiceNig .cardTxt {
+    color: #00A85B;
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+}
+
+.voiceNig .vnmidTxt {
+    color: #748078;
+}
+
+.voiceNig .vnBtmCardTxt {
+    color: #00A85B;
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+} */
 
 .create-card {
     display: flex;
@@ -377,6 +375,57 @@
     .peterObiCard .smallTxt {
         margin-top: 0;
     }
+
+    /* Atiku card */
+    .atikuCard .card {
+        height: 230px;
+        max-height: 100%;
+        width: 230px;
+        max-width: 100%;
+
+    }
+
+    .atikuCard .cardImg {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 70px;
+        left: 51px;
+    }
+
+    .atikuCard .smallTxt {
+        position: absolute;
+        top: 125px;
+    }
+
+    .atikuCard .card-details p.cardTxt {
+        font-size: 1.79rem;
+        font-weight: 700;
+        /* padding-top: 12px; */
+    }
+
+    .atikuCard .midTxt {
+        font-size: 2.8rem !important;
+        position: absolute;
+        top: 19px;
+    }
+
+    .atikuCard .BtmCardTxt,
+    .atikuCard .BtmCardTxtNxt {
+        font-size: 3rem !important;
+        font-weight: var(--font-weight-bold);
+    }
+
+    .atikuCard .atk {
+        width: 185px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        position: absolute;
+        top: 55px;
+    }
+
 }
 
 @media only screen and (min-width:640px) {

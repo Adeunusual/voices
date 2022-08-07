@@ -104,9 +104,9 @@ const Card = () => {
                                 <div className="cardImg">
                                     {id === checkCardId ? <img src={cardImg} alt="" /> : <img src={avatar} alt="" />}
                                 </div>
-                                <p className="midTxt">{dataGotten.midTxt}</p>
+                                <p className="midTxt vnmidTxt">{dataGotten.midTxt}</p>
                                 <div className='atk'>
-                                    <p className="BtmCardTxt">{dataGotten.bottomCardTxt}</p>
+                                    <p className="BtmCardTxt vnBtmCardTxt">{dataGotten.bottomCardTxt}</p>
                                     <p className="BtmCardTxtNxt">{dataGotten.bottomCardTxtNxt}</p>
                                 </div>
                             </span>
