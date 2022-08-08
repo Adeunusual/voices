@@ -3,11 +3,11 @@ import PetrObi from '../../../assets/images/PeterObi.jpg';
 import atiku from '../../../assets/images/Atiku.jpg';
 
 import voteNig from '../../../assets/images/VoteNigeria.jpg';
-import APClogo from '../../../assets/images/APClogo.png';
-import LBlogo from '../../../assets/images/lbParty.png';
-import PDPlogo from '../../../assets/images/PDPLogo.png';
+import APClogo from '../../../assets/images/APClogo.jpg';
+import LBlogo from '../../../assets/images/LBlogo.jpg';
+import PDPlogo from '../../../assets/images/PDPlogo.jpg';
 
-import avatar from '../../../assets/images/avatar.png';
+import avatar from '../../../assets/images/avatar.jpg';
 
 const data = [
     {

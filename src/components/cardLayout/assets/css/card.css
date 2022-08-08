@@ -107,7 +107,6 @@
 .cardImg {
     width: 80px;
     height: 80px;
-    border: 1px solid var(--white);
     border-radius: 50%;
 }
 
@@ -137,7 +136,7 @@
 
 /* Tinubu */
 .tinubuCard .card {
-    background-image: url(../../../../assets/images/BKG.png);
+    background-image: url(../../../../assets/images/BKG.jpg);
 }
 
 .tinubuCard .posImgTxt {
@@ -177,7 +176,7 @@
 
 /* Peterobi */
 .peterObiCard .card {
-    background-image: url(../../../../assets/images/PetObg.png);
+    background-image: url(../../../../assets/images/Group\ 2.jpg);
 }
 
 .peterObiCard .cardImg {
@@ -211,7 +210,7 @@
 
 /* atiku card */
 .atikuCard .card {
-    background-image: url(../../../../assets/images/BKG3.png);
+    background-image: url(../../../../assets/images/Group\ 3.jpg);
 }
 
 .atikuCard .cardImg {
@@ -268,7 +267,7 @@
 
 /* voice Nig */
 .voiceNig .card {
-    background-image: url(../../../../assets/images/Bg4.png);
+    background-image: url(../../../../assets/images/Group\ 2.jpg);
 }
 
 /* .voiceNig .cardTxt {

@@ -1,10 +1,10 @@
-import bannerBg from '../assets/images/bannerImg.png';
+import bannerBg from '../assets/images/bannerBg.png';
 import '../assets/css/banner.css';
 
 const Banner = ({ hide }) => {
     return (
         <div className={`banner ${hide ? 'd-none' : ''}`}>
-            <img className="bannerImg" src={bannerBg} alt="" />
+            <img className="bannerBg" src={bannerBg} alt="" />
             <div className="bannerTxt">
                 <h1>Your voices matter.
                     <br />

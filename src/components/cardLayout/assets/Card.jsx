@@ -3,7 +3,7 @@ import '../assets/css/card.css';
 import { FaCheckCircle, FaEllipsisH } from 'react-icons/fa';
 import data from './CardData.jsx';
 import html2canvas from "html2canvas";
-import avatar from '../../../assets/images/avatar.png';
+import avatar from '../../../assets/images/avatar.jpg';
 import PopUpModal from './PopUpModal';
 import RenderPopUp from './RenderPopUp';
 
