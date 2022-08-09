@@ -101,21 +101,23 @@ const Card = () => {
                             <img className='partyLogo-img' src={dataGotten.partyLogo} alt="" />
                         </div>
                         <div className="card-details">
+                            <div className="cardImg">
+                                {id === checkCardId ? <img src={cardImg} alt="" /> : <img src={avatar} alt="" />}
+                            </div>
                             <p className="cardTxt">{dataGotten.cardTxt}</p>
+                            <p className="BtmCardTxt">{dataGotten.bottomCardTxt}</p>
                             <span className='posImgTxt'>
-                                <div className="cardImg">
-                                    {id === checkCardId ? <img src={cardImg} alt="" /> : <img src={avatar} alt="" />}
-                                </div>
+
                                 <p className="midTxt vnmidTxt">{dataGotten.midTxt}</p>
                                 <div className='atk'>
-                                    <p className="BtmCardTxt vnBtmCardTxt">{dataGotten.bottomCardTxt}</p>
+
                                     <p className="BtmCardTxtNxt">{dataGotten.bottomCardTxtNxt}</p>
                                 </div>
                             </span>
-                            <small className='smallTxt'>{dataGotten.smallTxt} </small>
+                            <p className='smallTxt'>{dataGotten.smallTxt} </p>
                         </div>
                     </div>
-                </div>
+                </div >
             ))
             }
 

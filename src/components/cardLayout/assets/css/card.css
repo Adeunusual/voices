@@ -28,7 +28,9 @@
     padding: 16px;
     border-radius: var(--border-radius-small);
     border: 1px solid var(--btn-shadow-color);
-    margin: 0 auto;
+
+    display: grid;
+    grid-gap: 16px
 }
 
 .candidateDetails {
@@ -81,13 +83,12 @@
 }
 
 .card-border .card {
-    height: 250px;
+    height: 100%;
     max-height: 100%;
-    width: 250px;
+    width: 100%;
     max-width: 100%;
 
-    padding: 16px;
-    margin: 16px 0 0;
+    padding: 15px;
 
     border-radius: var(--border-radius-medium);
     background-position: center;
@@ -96,8 +97,37 @@
     cursor: pointer !important;
 }
 
+@media only screen and (min-width:640px) {
+    .card-inner-w {
+        padding: 0 30px;
+    }
+
+    .cardComponent {
+        grid-gap: 8px 8px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card-border .card {
+        height: 100%;
+        max-height: 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width:960px) {
+    .card-inner-w {
+        padding: 0 40px;
+    }
+
+    .cardComponent {
+        grid-gap: 24px 24px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 .card .partyLogo {
-    width: 25px;
+    width: 30px;
 }
 
 .card .partyLogo img {
@@ -128,50 +158,38 @@
     font-family: var(--NeueMachina) !important;
 }
 
-.smallTxt {
-    font-size: 0.675rem;
-    text-align: center;
-    font-weight: var(--font-weight-light);
-}
-
 /* Tinubu */
 .tinubuCard .card {
     background-image: url(../../../../assets/images/BKG.jpg);
 }
 
-.tinubuCard .posImgTxt {
+.tinubuCard .card-details {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
-.tinubuCard .cardTxt {
-    position: absolute;
-    top: 5rem;
-    left: auto;
+.tinubuCard .card-details p.cardTxt {
     font-size: 1.5rem;
-    letter-spacing: -0.875px;
-    font-weight: var(--font-weight-bold);
+    line-height: 85%;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: -0.08em;
+    margin-block-start: 8px;
 }
 
-.tinubuCard .cardImg {
-    margin-bottom: 22px;
-}
-
-.tinubuCard .BtmCardTxt {
+.tinubuCard .card-details p.BtmCardTxt {
     font-size: 1.5rem;
-    font-weight: var(--font-weight-bold);
+    line-height: 85%;
+    font-weight: 900;
+    letter-spacing: -0.08em;
 }
 
-.tinubuCard .cardImg .tinubuCard .cardImg {
-    width: 80px;
-    height: 80px;
-}
-
-.smallTxt {
-    text-align: center;
-    padding-top: 25px;
+.tinubuCard .card-details .smallTxt {
+    font-size: .675rem;
+    font-weight: 100;
+    justify-content: baseline;
+    margin-block-start: 32px;
 }
 
 /* Peterobi */
@@ -179,90 +197,9 @@
     background-image: url(../../../../assets/images/Group\ 2.jpg);
 }
 
-.peterObiCard .cardImg {
-    width: 80px;
-    height: 80px;
-}
-
-.peterObiCard .posImgTxt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -5px;
-}
-
-.peterObiCard .card-details p.cardTxt {
-    font-size: 2.3rem;
-    font-weight: 700;
-    letter-spacing: -1.97px;
-    text-align: center;
-    padding-top: 12px;
-}
-
-.peterObiCard .BtmCardTxt {
-    font-size: 5em !important;
-    font-weight: var(--font-weight-bold);
-}
-
-.peterObiCard .smallTxt {
-    margin-top: -5x;
-}
-
 /* atiku card */
 .atikuCard .card {
     background-image: url(../../../../assets/images/Group\ 3.jpg);
-}
-
-.atikuCard .cardImg {
-    width: 65px;
-    height: 65px;
-    position: absolute;
-    top: 80px;
-    left: 57px;
-}
-
-.atikuCard .posImgTxt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: -30px;
-}
-
-.atikuCard .card-details p.cardTxt {
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: -1.97px;
-    text-align: center;
-    /* padding-top: 12px; */
-}
-
-.atikuCard .midTxt {
-    font-size: 3.2em !important;
-    font-weight: var(--font-weight-bold);
-    position: absolute;
-    top: 25px;
-}
-
-.atikuCard .BtmCardTxt,
-.atikuCard .BtmCardTxtNxt {
-    font-size: 3rem !important;
-    font-weight: var(--font-weight-bold);
-}
-
-.atikuCard .atk {
-    width: 185px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    position: absolute;
-    top: 65px;
-}
-
-.atikuCard .smallTxt {
-    position: absolute;
-    top: 150px;
 }
 
 /* voice Nig */
@@ -270,21 +207,7 @@
     background-image: url(../../../../assets/images/Group\ 2.jpg);
 }
 
-/* .voiceNig .cardTxt {
-    color: #00A85B;
-    font-size: 2.5rem;
-    font-weight: var(--font-weight-bold);
-}
 
-.voiceNig .vnmidTxt {
-    color: #748078;
-}
-
-.voiceNig .vnBtmCardTxt {
-    color: #00A85B;
-    font-size: 2.5rem;
-    font-weight: var(--font-weight-bold);
-} */
 
 .create-card {
     display: flex;
@@ -319,187 +242,6 @@
     /* font-size: .9rem; */
     color: #4CAF50;
     margin-inline-end: 5px;
-}
-
-/* @media */
-@media only screen and (min-width:440px) {
-    .cardComponent {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 8px 8px;
-    }
-
-    .card-border .card {
-        height: auto;
-        max-height: 100%;
-        width: auto;
-        max-width: 100%;
-    }
-
-    .card-border {
-        margin: 0;
-    }
-
-    /* PeterObi */
-    .peterObiCard .cardImg {
-        width: 80px;
-        height: 80px;
-    }
-
-    .peterObiCard .posImgTxt {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: -12px;
-    }
-
-    .peterObiCard .card-details p.cardTxt {
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: -1.97px;
-        text-align: center;
-        padding-top: 12px;
-    }
-
-    .peterObiCard .BtmCardTxt {
-        font-size: 4.5em !important;
-        font-weight: var(--font-weight-bold);
-    }
-
-    .peterObiCard .smallTxt {
-        margin-top: 0;
-    }
-
-    /* Atiku card */
-    .atikuCard .card {
-        height: 230px;
-        max-height: 100%;
-        width: 230px;
-        max-width: 100%;
-
-    }
-
-    .atikuCard .cardImg {
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        top: 70px;
-        left: 51px;
-    }
-
-    .atikuCard .smallTxt {
-        position: absolute;
-        top: 125px;
-    }
-
-    .atikuCard .card-details p.cardTxt {
-        font-size: 1.79rem;
-        font-weight: 700;
-        /* padding-top: 12px; */
-    }
-
-    .atikuCard .midTxt {
-        font-size: 2.8rem !important;
-        position: absolute;
-        top: 19px;
-    }
-
-    .atikuCard .BtmCardTxt,
-    .atikuCard .BtmCardTxtNxt {
-        font-size: 3rem !important;
-        font-weight: var(--font-weight-bold);
-    }
-
-    .atikuCard .atk {
-        width: 185px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-        position: absolute;
-        top: 55px;
-    }
-
-}
-
-@media only screen and (min-width:640px) {
-    .card-inner-w {
-        padding: 0 30px;
-    }
-
-    .cardComponent {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    /* Tinubu card */
-
-    .tinubuCard .cardTxt {
-        position: absolute;
-        top: 5rem;
-        left: auto;
-        font-size: 1.5rem;
-        letter-spacing: -0.875px;
-        font-weight: var(--font-weight-bold);
-    }
-
-    .tinubuCard .cardImg {
-        margin-bottom: 20px;
-    }
-
-    .peterObiCard .cardImg {
-        width: 80px;
-        height: 80px;
-    }
-
-    .peterObiCard .posImgTxt {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: -5px;
-    }
-
-    .peterObiCard .card-details p.cardTxt {
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: -1.97px;
-        text-align: center;
-        padding-top: 12px;
-    }
-
-    .peterObiCard .BtmCardTxt {
-        font-size: 4em !important;
-        font-weight: var(--font-weight-bold);
-    }
-
-    .peterObiCard .smallTxt {
-        margin-top: 0px;
-    }
-}
-
-@media only screen and (min-width:960px) {
-    .card-wrapper {
-        padding: 48px 0 80px 0;
-    }
-
-    .card-inner-w {
-        padding: 0 40px;
-    }
-
-    .card-wrapper .heading h2 {
-        font-size: 32px;
-        line-height: 1.2;
-    }
-
-    .cardComponent {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media only screen and (min-width:960px) {
-
-    .cardComponent {
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 25px 25px;
-    }
 }
 
 /* rn */
