@@ -124,6 +124,17 @@
         grid-gap: 24px 24px;
         grid-template-columns: repeat(4, 1fr);
     }
+
+}
+
+@media only screen and (min-width:1200px) {
+
+    .card-border .card {
+        height: 250px;
+        max-height: 100%;
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 .card .partyLogo {
@@ -167,10 +178,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1.3rem;
 }
 
 .tinubuCard .card-details p.cardTxt {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 85%;
     font-weight: 900;
     font-style: normal;
@@ -179,17 +191,17 @@
 }
 
 .tinubuCard .card-details p.BtmCardTxt {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 85%;
     font-weight: 900;
     letter-spacing: -0.08em;
 }
 
 .tinubuCard .card-details .smallTxt {
-    font-size: .675rem;
+    font-size: .575rem;
     font-weight: 100;
     justify-content: baseline;
-    margin-block-start: 32px;
+    margin-block-start: 16px;
 }
 
 /* Peterobi */
@@ -219,7 +231,7 @@
 .peterObiCard .card-details p.cardTxt {
     grid-row: 1/ 2;
     grid-column: 1/15;
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     line-height: 85%;
     font-weight: 900;
     font-style: normal;
@@ -238,10 +250,10 @@
 
 .peterObiCard .card-details .smallTxt {
     grid-column: 1/15;
-    font-size: .675rem;
+    font-size: .575rem;
     font-weight: 100;
     justify-content: baseline;
-    margin-block-start: 24px;
+    margin-block-start: 12px;
 }
 
 /* atiku card */
@@ -264,7 +276,6 @@
     width: 58px;
     height: 58px;
     border-radius: 50%;
-    margin-top: 5px;
 }
 
 .atikuCard .card-details p.cardTxt {
@@ -302,7 +313,7 @@
 
 .atikuCard .card-details .smallTxt {
     grid-column: 1/6;
-    font-size: .675rem;
+    font-size: .575rem;
     font-weight: 500;
     justify-content: baseline;
     margin-block-start: 10px;
