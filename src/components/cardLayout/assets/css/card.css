@@ -98,7 +98,7 @@
 }
 
 .card .partyLogo {
-    width: 50px;
+    width: 45px;
 }
 
 .card .partyLogo img {
@@ -138,11 +138,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1.3rem;
+    margin-top: .7rem;
+}
+
+.tinubuCard .cardImg {
+    width: 100px;
+    height: 100px;
 }
 
 .tinubuCard .card-details p.cardTxt {
-    font-size: 1.7rem;
+    font-size: 2.7rem;
     line-height: 85%;
     font-weight: 900;
     font-style: normal;
@@ -151,7 +156,7 @@
 }
 
 .tinubuCard .card-details p.BtmCardTxt {
-    font-size: 1.7rem;
+    font-size: 2.7rem;
     line-height: 85%;
     font-weight: 900;
     letter-spacing: -0.08em;
@@ -307,6 +312,28 @@
 
     .card .partyLogo {
         width: 30px;
+    }
+
+    /* Tinubu */
+    .tinubuCard .card-details {
+        margin-top: 1.3rem;
+    }
+
+    .tinubuCard .cardImg {
+        width: 80px;
+        height: 80px;
+    }
+
+    .tinubuCard .card-details p.cardTxt {
+        font-size: 1.7rem;
+    }
+
+    .tinubuCard .card-details p.BtmCardTxt {
+        font-size: 1.7rem;
+    }
+
+    .tinubuCard .card-details .smallTxt {
+        font-size: .575rem;
     }
 
 }
