@@ -5,7 +5,7 @@ import atiku from '../../../assets/images/Atiku.jpg';
 import voteNig from '../../../assets/images/VoteNigeria.jpg';
 import APClogo from '../../../assets/images/APClogo.jpg';
 import LBlogo from '../../../assets/images/LBlogo.jpg';
-import PDPlogo from '../../../assets/images/PDPlogo.jpg';
+import PDPlogo from '../../../assets/images/PDPlogo.png';
 
 import avatar from '../../../assets/images/avatar.jpg';
 
@@ -39,10 +39,11 @@ const data = [
         candidateName: 'Atiku',
         partyLogo: PDPlogo,
         cardImg: avatar,
-        cardTxt: "I'm Proud",
-        midTxt: ' Atiku',
+        cardTxt: "I am Proud",
+        midTxt: "Atiku",
         bottomCardTxt: '2',
-        bottomCardTxtNxt: '23',
+        bottomCardTxt2: '2',
+        bottomCardTxt3: '3',
         smallTxt: 'create yours at voice.assured.com'
     },
     {
@@ -95,10 +96,11 @@ const data = [
         candidateName: 'Atiku',
         partyLogo: PDPlogo,
         cardImg: avatar,
-        cardTxt: "I'm Proud",
-        midTxt: ' Atiku',
+        cardTxt: "I am Proud",
+        midTxt: "Atiku",
         bottomCardTxt: '2',
-        bottomCardTxtNxt: '23',
+        bottomCardTxt2: '2',
+        bottomCardTxt3: '3',
         smallTxt: 'create yours at voice.assured.com'
     },
     {
@@ -128,10 +130,11 @@ const data = [
         candidateName: 'Atiku',
         partyLogo: PDPlogo,
         cardImg: avatar,
-        cardTxt: "I'm Proud",
-        midTxt: ' Atiku',
+        cardTxt: "I am Proud",
+        midTxt: "Atiku",
         bottomCardTxt: '2',
-        bottomCardTxtNxt: '23',
+        bottomCardTxt2: '2',
+        bottomCardTxt3: '3',
         smallTxt: 'create yours at voice.assured.com'
     },
     {

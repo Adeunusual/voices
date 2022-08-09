@@ -105,15 +105,10 @@ const Card = () => {
                                 {id === checkCardId ? <img src={cardImg} alt="" /> : <img src={avatar} alt="" />}
                             </div>
                             <p className="cardTxt">{dataGotten.cardTxt}</p>
+                            <p className="midTxt">{dataGotten.midTxt}</p>
                             <p className="BtmCardTxt">{dataGotten.bottomCardTxt}</p>
-                            <span className='posImgTxt'>
-
-                                <p className="midTxt vnmidTxt">{dataGotten.midTxt}</p>
-                                <div className='atk'>
-
-                                    <p className="BtmCardTxtNxt">{dataGotten.bottomCardTxtNxt}</p>
-                                </div>
-                            </span>
+                            <p className="BtmCardTxt2">{dataGotten.bottomCardTxt2}</p>
+                            <p className="BtmCardTxt3">{dataGotten.bottomCardTxt3}</p>
                             <p className='smallTxt'>{dataGotten.smallTxt} </p>
                         </div>
                     </div>

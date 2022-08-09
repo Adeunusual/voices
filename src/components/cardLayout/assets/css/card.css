@@ -83,7 +83,7 @@
 }
 
 .card-border .card {
-    height: 100%;
+    height: 300px;
     max-height: 100%;
     width: 100%;
     max-width: 100%;
@@ -195,6 +195,53 @@
 /* Peterobi */
 .peterObiCard .card {
     background-image: url(../../../../assets/images/Group\ 2.jpg);
+    position: relative;
+    border: 1px solid red;
+}
+
+.peterObiCard .card-details {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(14, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-block-start: 1.3rem;
+}
+
+.peterObiCard .cardImg {
+    grid-row: 2/4;
+    grid-column: 3/5;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.peterObiCard .card-details p.cardTxt {
+    grid-row: 1/ 2;
+    grid-column: 1/15;
+    font-size: 2.2rem;
+    line-height: 85%;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: -0.08em;
+    margin-block-end: 2px;
+}
+
+.peterObiCard .card-details p.BtmCardTxt {
+
+    grid-column: 5/12;
+    font-size: 5.8rem;
+    line-height: 85%;
+    font-weight: 900;
+    letter-spacing: -0.08em;
+}
+
+.peterObiCard .card-details .smallTxt {
+    grid-column: 1/15;
+    font-size: .675rem;
+    font-weight: 100;
+    justify-content: baseline;
+    margin-block-start: 24px;
 }
 
 /* atiku card */
@@ -202,9 +249,70 @@
     background-image: url(../../../../assets/images/Group\ 3.jpg);
 }
 
+.atikuCard .card-details {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(7, auto);
+    justify-items: center;
+    align-items: center;
+    margin-block-start: .3rem;
+}
+
+.atikuCard .cardImg {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.atikuCard .card-details p.cardTxt {
+    grid-row: 1/ 2;
+    grid-column: 1/6;
+    font-size: 2.1rem;
+    line-height: 85%;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: -0.08em;
+    margin-block-end: 2px;
+}
+
+.atikuCard .card-details p.midTxt {
+    grid-column: 1/6;
+    font-size: 4rem;
+    line-height: 85%;
+    font-weight: 900;
+    letter-spacing: -0.08em;
+}
+
+.atikuCard .card-details p.BtmCardTxt,
+.atikuCard .card-details p.BtmCardTxt2,
+.atikuCard .card-details p.BtmCardTxt3 {
+    font-size: 4.2rem;
+    line-height: 85%;
+    font-weight: 900;
+    letter-spacing: -0.08em;
+}
+
+.atikuCard .card-details p.BtmCardTxt {
+    grid-column: 1/2;
+
+}
+
+.atikuCard .card-details .smallTxt {
+    grid-column: 1/6;
+    font-size: .675rem;
+    font-weight: 500;
+    justify-content: baseline;
+    margin-block-start: 10px;
+}
+
+
 /* voice Nig */
 .voiceNig .card {
-    background-image: url(../../../../assets/images/Group\ 2.jpg);
+    background-color: #FFF;
+    color: #000 !important;
 }
 
 
