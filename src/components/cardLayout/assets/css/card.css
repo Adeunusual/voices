@@ -516,7 +516,7 @@
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: normal;
-    margin-block-start: 16px;
+    margin-top: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -531,6 +531,7 @@
 @media only screen and (min-width:960px) {
     .create-card {
         flex-direction: row;
+        margin-block-start: 16px;
     }
 
     .create-txt {

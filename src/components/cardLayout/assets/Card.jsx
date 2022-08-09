@@ -120,12 +120,11 @@ const Card = () => {
             }
 
             {/* PopUp Modal */}
-            <PopUpModal trigger={popUpBtn} setTrigger={setPopUpBtn} handleCardImgChange={handleCardImgChange}>
+            <PopUpModal trigger={popUpBtn} setTrigger={setPopUpBtn} handleCardImgChange={handleCardImgChange} imgSrc={cardImg}>
                 <div className="create-card">
                     <button className='custom-btn create-btn' onClick={() => handleCard('render')} >
-                        Create Now for ₦500
+                        Create Card
                     </button>
-                    <span className='create-txt'><FaCheckCircle className='icon' />Saved just now</span>
                 </div>
             </PopUpModal>
             <RenderPopUp trigger={usePopUpBtn} setTrigger={setusePopUpBtn} handleCard={handleCard} cardSrc={renderCardImg}>
