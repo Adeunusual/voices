@@ -61,8 +61,7 @@ const Card = () => {
     const handleCard = async (option) => {
         // ---
         const digitalCard = printRef.current;
-        digitalCard.style.borderRadius = '0';
-        digitalCard.style.objectFill = 'cover';
+        // digitalCard.style.borderRadius = '0';
         const canvas = await html2canvas(digitalCard);
         const data = canvas.toDataURL('image/jpg');
         // ---
