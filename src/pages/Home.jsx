@@ -1,12 +1,11 @@
 import { useRef, useState } from "react";
-// import Banner from "../components/Banner"
 import Header from "../components/header/Header"
 import { FaImage, FaEdit, FaDownload } from 'react-icons/fa';
 import Banner from "../components/Banner";
 import IconBox from "../components/IconBox";
 import CardLayout from "../components/cardLayout";
 import Footer from "../components/Footer";
-// import CardCarouselLayout from "../components/cardCarousel";
+import CardCarouselLayout from "../components/cardCarousel";
 const Home = () => {
     const navbar = useRef();
     const [showMobileNav, setMobile] = useState(false)
@@ -25,7 +24,7 @@ const Home = () => {
                     </div>
                 </div>
                 <CardLayout hide={showMobileNav} />
-                {/* <CardCarouselLayout hide={showMobileNav} /> */}
+                <CardCarouselLayout />
                 <Footer hide={showMobileNav} />
             </div>
         </>
