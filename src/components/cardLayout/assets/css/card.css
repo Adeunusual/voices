@@ -176,7 +176,6 @@
 .peterObiCard .card {
     background-image: url(../../../../assets/images/Group\ 2.jpg);
     position: relative;
-    border: 1px solid red;
 }
 
 .peterObiCard .card-details {
@@ -412,33 +411,6 @@
     font-family: var(--GT-Walsheim);
 }
 
-.create-txt {
-    width: 100%;
-    color: #CDCDCD;
-    font-size: .75rem;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: normal;
-    margin-top: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.create-txt .icon {
-    font-size: .9rem;
-    color: #4CAF50;
-    margin-inline-end: 5px;
-}
-
-@media only screen and (min-width:960px) {
-    .create-card {
-        flex-direction: row;
-        margin-block-start: 16px;
-    }
-
-    .create-txt {
-        margin-block-start: 0;
-    }
-
+.create-card {
+    margin-block-start: 16px;
 }

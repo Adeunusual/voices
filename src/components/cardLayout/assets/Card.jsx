@@ -59,6 +59,7 @@ const Card = () => {
     const printRef = useRef();
 
     const handleCard = async (option) => {
+        document.getElementById('card').style.borderRadius = '0';
         // ---
         const digitalCard = printRef.current;
         const canvas = await html2canvas(digitalCard);
@@ -94,7 +95,8 @@ const Card = () => {
                         </div>
                     </div>
 
-                    <div className="card"
+                    <div id='card'
+                        className="card"
                         onClick={() => setPopUpBtn(true)}
                         ref={id === checkCardId ? printRef : null}>
                         <div className="partyLogo">
