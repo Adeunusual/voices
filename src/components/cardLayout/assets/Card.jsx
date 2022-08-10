@@ -62,7 +62,7 @@ const Card = () => {
         // ---
         const digitalCard = printRef.current;
         digitalCard.style.borderRadius = '0';
-        digitalCard.style.border = '0';
+        digitalCard.style.objectFill = 'cover';
         const canvas = await html2canvas(digitalCard);
         const data = canvas.toDataURL('image/jpg');
         // ---

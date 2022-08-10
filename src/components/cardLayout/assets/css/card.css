@@ -30,7 +30,7 @@
     border: 1px solid var(--btn-shadow-color);
 
     display: grid;
-    grid-gap: 16px
+    grid-gap: 16px;
 }
 
 .candidateDetails {
