@@ -70,6 +70,7 @@ const Card = () => {
             case 'share': return shareCard(canvas);
             case 'render':
                 setusePopUpBtn(true)
+                setPopUpBtn(false);
                 setRenderCardImg(data);
                 break;
             default: return downloadCard(data)
