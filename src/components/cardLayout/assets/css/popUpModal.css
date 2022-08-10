@@ -219,7 +219,7 @@
 .laterIMg {
     width: 250px;
     height: 250px;
-    object-fit: cover;
+    object-fit: contain;
     border: 1px solid #202020;
     outline: 0;
 }
