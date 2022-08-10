@@ -20,12 +20,12 @@ const routes = [
         isComponent: false,
         text: 'Select a Card'
     },
-    {
-        id: 'premium',
-        route: '/#',
-        isComponent: false,
-        text: 'Premium'
-    },
+    // {
+    //     id: 'premium',
+    //     route: '/#',
+    //     isComponent: false,
+    //     text: 'Premium'
+    // },
     {
         id: 'premium',
         route: '/#',
