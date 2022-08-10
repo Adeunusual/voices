@@ -59,20 +59,17 @@ const Card = () => {
     const printRef = useRef();
 
     const handleCard = async (option) => {
-
-
         // ---
         const digitalCard = printRef.current;
-        // digitalCard.style.borderRadius = '0';
         const canvas = await html2canvas(digitalCard, { backgroundColor: null });
         const data = canvas.toDataURL('image/jpg');
         // ---
         switch (option) {
             case 'share': return shareCard(canvas);
             case 'render':
+                setRenderCardImg(data);
                 setusePopUpBtn(true)
                 setPopUpBtn(false);
-                setRenderCardImg(data);
                 break;
             default: return downloadCard(data)
         }

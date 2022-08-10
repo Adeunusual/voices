@@ -346,6 +346,13 @@
 }
 
 @media only screen and (min-width:960px) {
+    .card-wrapper {
+        max-width: 1300px;
+        padding: 48px 0 80px 0;
+        margin: 0 auto;
+        font-family: var(--GT-Walsheim);
+    }
+
     .card-inner-w {
         padding: 0 40px;
     }
