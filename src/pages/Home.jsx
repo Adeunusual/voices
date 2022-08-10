@@ -6,7 +6,7 @@ import Banner from "../components/Banner";
 import IconBox from "../components/IconBox";
 import CardLayout from "../components/cardLayout";
 import Footer from "../components/Footer";
-import CardCarouselLayout from "../components/cardCarousel";
+// import CardCarouselLayout from "../components/cardCarousel";
 const Home = () => {
     const navbar = useRef();
     const [showMobileNav, setMobile] = useState(false)

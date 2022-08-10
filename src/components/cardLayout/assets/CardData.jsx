@@ -2,7 +2,7 @@ import Tinubu from '../../../assets/images/Tinubu.jpg';
 import PetrObi from '../../../assets/images/PeterObi.jpg';
 import atiku from '../../../assets/images/Atiku.jpg';
 
-import voteNig from '../../../assets/images/VoteNigeria.jpg';
+// import voteNig from '../../../assets/images/VoteNigeria.jpg';
 import APClogo from '../../../assets/images/APClogo.jpg';
 import LBlogo from '../../../assets/images/LBlogo.jpg';
 import PDPlogo from '../../../assets/images/PDPlogo.png';
@@ -123,7 +123,7 @@ const data = [
     //     cardTxt: "I'm Proud BAT2023",
     //     smallTxt: 'create yours at voice.assured.com'
     // }
-    ,
+
     // {
     //     cardId: 10,
     //     className: 'atikuCard',
