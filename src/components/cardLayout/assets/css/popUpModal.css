@@ -217,8 +217,9 @@
 }
 
 .laterIMg {
-    width: 230px;
-    height: 230px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
     border: 1px solid #202020;
     outline: 0;
 }
