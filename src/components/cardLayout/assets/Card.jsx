@@ -59,10 +59,12 @@ const Card = () => {
     const printRef = useRef();
 
     const handleCard = async (option) => {
+
+
         // ---
         const digitalCard = printRef.current;
         // digitalCard.style.borderRadius = '0';
-        const canvas = await html2canvas(digitalCard);
+        const canvas = await html2canvas(digitalCard, { backgroundColor: null });
         const data = canvas.toDataURL('image/jpg');
         // ---
         switch (option) {
