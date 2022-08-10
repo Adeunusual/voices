@@ -59,9 +59,9 @@ const Card = () => {
     const printRef = useRef();
 
     const handleCard = async (option) => {
-        document.getElementById('card').style.borderRadius = '0';
         // ---
         const digitalCard = printRef.current;
+        digitalCard.style.borderRadius = '0';
         const canvas = await html2canvas(digitalCard);
         const data = canvas.toDataURL('image/jpg');
         // ---
@@ -73,6 +73,8 @@ const Card = () => {
                 break;
             default: return downloadCard(data)
         }
+        // ---
+
     };
     return (
         <div className="cardComponent">
@@ -119,13 +121,8 @@ const Card = () => {
             }
 
             {/* PopUp Modal */}
-            <PopUpModal trigger={popUpBtn} setTrigger={setPopUpBtn} handleCardImgChange={handleCardImgChange} imgSrc={cardImg}>
-                <div className="create-card">
-                    <button className='custom-btn create-btn' onClick={() => handleCard('render')} >
-                        Create Card
-                    </button>
-                </div>
-            </PopUpModal>
+            <PopUpModal trigger={popUpBtn} setTrigger={setPopUpBtn} handleCardImgChange={handleCardImgChange} imgSrc={cardImg} renderCard={handleCard} />
+
             <RenderPopUp trigger={usePopUpBtn} setTrigger={setusePopUpBtn} handleCard={handleCard} cardSrc={renderCardImg}>
             </RenderPopUp>
         </div >
