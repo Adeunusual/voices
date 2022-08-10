@@ -90,7 +90,7 @@
 
     padding: 24px;
 
-    /* border-radius: var(--border-radius-medium); */
+    border-radius: var(--border-radius-medium);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
