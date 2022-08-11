@@ -6,7 +6,7 @@ const CardCarouselLayout = ({ hide }) => {
     return (
         <>
             <div id="premium" className="loadM-wrapper">
-                <a href="assured.com" id="load-more" class="load-more">Load more artworks</a>
+                <a href="assured.com" id="load-more" className="load-more">Load more artworks</a>
             </div>
             <div className={`carousel-wrapper ${hide ? 'd-none' : ''}`}>
                 <div className="carousel-inner-w">

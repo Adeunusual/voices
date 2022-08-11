@@ -156,14 +156,14 @@
     }
 }
 
-.nav-items .nav-menu li {
+.nav-items .nav-menu li a {
     color: var(--color-gray-10);
     text-decoration: none;
     font-size: 18px;
     margin-inline-end: 1rem;
 }
 
-.nav-items .nav-menu li:hover {
+.nav-items .nav-menu li a:hover {
     color: var(--color-gray-50);
 }
 

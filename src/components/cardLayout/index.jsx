@@ -3,7 +3,7 @@ import Card from './assets/Card';
 const CardLayout = ({ hide }) => {
     return (
         <>
-            <div className={`card-wrapper ${hide ? 'd-none' : ''}`}>
+            <div className={`card-wrapper ${hide ? 'd-none' : ''}`} id="selectCard">
                 <div className="card-inner-w">
                     <div className="heading">
                         <h2>Select a Card 🔥</h2>
