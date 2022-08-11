@@ -16,7 +16,7 @@ const IconBox = ({ icon, type }) => {
 
 
     return (
-        <div className="card">
+        <div className="card" id='how-it-works'>
             <div className="card-icon">
                 {icon}
             </div>

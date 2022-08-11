@@ -19,7 +19,7 @@ const Navbar = ({ navbar, showNavbar, mobileNav }) => {
             <nav className={`navbar ${mobileNav ? 'responsive_nav' : ''}`} ref={navbar}>
                 <div className="nav-items">
                     <ul className="nav-menu">
-                        <li><a href="/"> How it Works</a></li>
+                        <li><a href="#how-it-works"> How it Works</a></li>
                         <li><a href="#selectCard"> Select a Card</a></li>
                         <li><a href="#premium"> Premium</a></li>
                     </ul>
