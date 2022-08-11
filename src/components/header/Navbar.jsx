@@ -1,11 +1,12 @@
 
-import routes from '../../routes';
 import { FaBars } from 'react-icons/fa';
 import mobileLogo from '../../assets/images/logo-mobile.svg';
 import logo from '../../assets/images/logo_light.svg'
 import SearchBar from './SearchBar';
 import Button from '../Button';
 import MobileView from './MobileView';
+
+import { BrowserRouter as Link } from 'react-router-dom';
 
 const Navbar = ({ navbar, showNavbar, mobileNav }) => {
 
@@ -20,7 +21,9 @@ const Navbar = ({ navbar, showNavbar, mobileNav }) => {
             <nav className={`navbar ${mobileNav ? 'responsive_nav' : ''}`} ref={navbar}>
                 <div className="nav-items">
                     <ul className="nav-menu">
-                        {routes.filter(route => route.isComponent === false).map((route, i) => <li key={i}><a href={route.route}>{route.text}</a></li>)}
+                        <li><Link to="/">How it Works</Link></li>
+                        <li><Link to="/select-card">Select a Card</Link></li>
+                        <li><Link to="/Premium">Premium</Link></li>
                     </ul>
                 </div>
 

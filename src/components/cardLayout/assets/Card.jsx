@@ -74,7 +74,6 @@ const Card = () => {
             default: return downloadCard(data)
         }
         // ---
-
     };
     return (
         <div className="cardComponent">

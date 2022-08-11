@@ -24,7 +24,7 @@ const Home = () => {
                     </div>
                 </div>
                 <CardLayout hide={showMobileNav} />
-                <CardCarouselLayout />
+                <CardCarouselLayout hide={showMobileNav} />
                 <Footer hide={showMobileNav} />
             </div>
         </>

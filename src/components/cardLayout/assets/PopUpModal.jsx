@@ -3,7 +3,7 @@ import '../assets/css/popUpModal.css';
 
 const PopUpModal = ({ children, trigger, setTrigger, handleCardImgChange, imgSrc, renderCard }) => {
     const previewImg = useRef();
-    const display = () => previewImg.current.classList.toggle("show_preview");
+    const display = () => previewImg.current.classList.add("show_preview");
 
     //Handle submit
     const handleSubmit = (e) => {
